@@ -106,7 +106,15 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://empow-her.vercel.app",
+        "https://empowher.vercel.app",
+        "https://empowher-six.vercel.app",
+        "https://empowher-git-main-trisha2910tinaaaaas-projects.vercel.app",
+        "https://empowher-cu3enmcsd-trisha2910tinaaaaas-projects.vercel.app",
+        os.getenv("FRONTEND_URL", ""),  # Allow configuration via environment variable
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
