@@ -170,9 +170,9 @@ def get_tavily_tool():
         tavily_api_key=TAVILY_API_KEY,
         max_results=15,
         search_depth="advanced",
-        include_answer=False,
+        include_answer=True,
         include_raw_content=True,
-        include_images=False,
+        include_images=True,
         include_domains=[
             "linkedin.com/jobs","x.com/jobs","indeed.com", "glassdoor.com", 
             "dice.com", "techmothers.co", "techcareers.com", 
