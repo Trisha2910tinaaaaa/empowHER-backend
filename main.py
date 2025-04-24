@@ -159,7 +159,7 @@ async def get_current_user(
 def get_llm():
     return ChatGroq(
         groq_api_key=GROQ_API_KEY,
-        model_name="llama3-70b-8192",
+        model_name="llama-4-maverick-17b-128e-instruct",
         temperature=0.7,
         max_tokens=4000  # Limit response tokens
     )
