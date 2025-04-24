@@ -550,7 +550,7 @@ def fetch_job_info(url: str) -> JobBasic:
     
     try:
         # Use Diffbot's Article API with more advanced parameters to get comprehensive information
-        API_URL = f"https://api.diffbot.com/v3/analyze?token={DIFFBOT_API_KEY}&url={url}&fields=links,meta,images,sentiment,facts&discussion=false&timeout=15000"
+        API_URL = f"https://api.diffbot.com/v3/article?token={DIFFBOT_API_KEY}&url={url}&fields=links,meta,images,sentiment,facts&discussion=false&timeout=15000"
         
         response = requests.get(API_URL, timeout=15)
         
